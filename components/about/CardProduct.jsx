@@ -13,7 +13,6 @@ function CardProduct(props) {
           {props.product.id.slice(0, 7)}
         </h6>
         <h6>{props.product.name}</h6>
-        {/* <p>{props.product.description.split(".")[0]}</p> */}
       </div>
       <div className="price">₪{props.product.price}</div>
       <div className="btn1">

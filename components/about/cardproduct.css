@@ -5,7 +5,7 @@
   background: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  border-radius: 0%;
+  border-radius: 8px;
   padding: 10px;
 }
 .imgcard {
@@ -39,36 +39,54 @@ img {
   justify-content: center;
   align-items: center;
   transition: all 0.8s;
+  margin-bottom: 8px;
 }
 .btn1 button:first-child {
-  background: linear-gradient(
-    0deg,
-    rgb(3, 142, 42) 0%,
-    rgba(102, 247, 113, 1) 100%
-  );
-  font-weight: 400;
-  font-size: 15px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
-  border: none;
-  border-radius: 0.2em;
-  color: white;
-  margin-right: 5px;
-  letter-spacing: 0.05em;
+  /* position: relative; */
+  /* display: inline-block; */
+  /* margin: 15px; */
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #1e6400;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 7px;
+  transition: ease-out 0.5s;
+  border: 2px solid #1e6400;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 0 #1e6400;
+}
+.btn1 button:last-child {
+  /* position: relative; */
+  /* display: inline-block; */
+  /* margin: 15px; */
+  height: 40px;
+  width: 80px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #e5cc2a;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #e5cc2a;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 0 #e5cc2a;
 }
 
-.btn1 button:last-child {
-  background: linear-gradient(0deg, rgb(187, 156, 0) 0%, rgb(147, 140, 1) 100%);
-  font-weight: 400;
-  font-size: 15px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
-  border: none;
+.btn1 button:last-child:hover {
   color: white;
-  border-radius: 0.2em;
-  margin-left: 5px;
-  margin-right: 5px;
-  justify-content: end;
-  letter-spacing: 0.05em;
+  box-shadow: inset 0 -100px 0 0 #e5cc2a;
 }
-.btn1 button:hover {
-  transform: scale(1.08);
+.btn1 button:first-child:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #1e6400;
+}
+s .btn1 button:active {
+  transform: scale(0.9);
 }

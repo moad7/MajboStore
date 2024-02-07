@@ -1,0 +1,28 @@
+.item {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.2rem;
+}
+.cardproduct {
+  display: flex;
+}
+h2 {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.categBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

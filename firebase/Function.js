@@ -6,10 +6,16 @@ import {
   where,
   query,
   getDoc,
+  doc,
 } from "firebase/firestore";
 
 export async function CategoryProducts({ categoryId }) {
   try {
+    // Fetch the category name based on categoryId
+    const categoryDoc = await getDoc(doc(database, "Categores", categoryId));
+    const categoryName = categoryDoc.data().name;
+
+    // Fetch products based on categoryId
     const productsRef = query(
       collection(database, "Products"),
       where("categoryId", "==", categoryId)
@@ -17,13 +23,14 @@ export async function CategoryProducts({ categoryId }) {
     const querySnapshot = await getDocs(productsRef);
     const productsData = [];
     querySnapshot.forEach((doc) => {
-      productsData.push({ id: doc.id, ...doc.data() });
+      productsData.push({ id: doc.id, categoryName, ...doc.data() });
     });
     return productsData;
   } catch (error) {
     console.error("Error fetching products:", error);
   }
 }
+
 export const getProductsByCategory = async () => {
   const products = await getAllProducts();
   const categories = await getAllCategoris();
