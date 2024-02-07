@@ -1,0 +1,74 @@
+.card {
+  width: 245px;
+  display: flex;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 0%;
+  padding: 10px;
+}
+.imgcard {
+  padding: 11px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  align-items: center;
+}
+.nd {
+  flex-direction: column;
+  height: 80px;
+}
+.nd h6 {
+  justify-content: start;
+  align-items: start;
+}
+.price {
+  font-weight: bold;
+  font-size: larger;
+  text-align: end;
+  color: brown;
+}
+
+.btn1 {
+  margin-top: 8px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s;
+}
+.btn1 button:first-child {
+  background: linear-gradient(
+    0deg,
+    rgb(3, 142, 42) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  border: none;
+  border-radius: 0.2em;
+  color: white;
+  margin-right: 5px;
+  letter-spacing: 0.05em;
+}
+
+.btn1 button:last-child {
+  background: linear-gradient(0deg, rgb(187, 156, 0) 0%, rgb(147, 140, 1) 100%);
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  border: none;
+  color: white;
+  border-radius: 0.2em;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: end;
+  letter-spacing: 0.05em;
+}
+.btn1 button:hover {
+  transform: scale(1.08);
+}
