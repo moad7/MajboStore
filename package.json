@@ -19,6 +19,7 @@
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.3",
     "react-router-hash-link": "^2.4.3",
+    "react-toast-notifications": "^2.5.1",
     "react-toastify": "^10.0.4"
   },
   "devDependencies": {

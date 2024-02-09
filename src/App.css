@@ -1,8 +1,10 @@
-.app{
-  display:contents;
-  justify-content:center;
-  align-items: start;
-  background-color:#2B2E4A !important;
+.app {
+  display: contents;
+  justify-content: center;
+  background-color: #2b2e4a !important;
   height: 100%;
-  width: 100%;  
+  width: 100%;
+}
+.spinner {
+  text-align: center;
 }

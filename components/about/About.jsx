@@ -3,8 +3,7 @@ import "./about.css";
 import { AppStore } from "../../ContextComponents/Contextes";
 import CardProduct from "./CardProduct";
 const About = () => {
-  const { products, categories, loadProducts, loadCategoris } =
-    useContext(AppStore);
+  const { products, loadProducts, loadCategoris } = useContext(AppStore);
 
   useEffect(() => {
     loadCategoris();

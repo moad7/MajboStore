@@ -4,6 +4,7 @@ import {
   getAllProducts,
   getProductsByCategory,
 } from "../firebase/Function";
+import { ToastContainer, toast } from "react-toastify";
 
 export const AppContext = createContext();
 
@@ -27,7 +28,6 @@ export const AppProvider = ({ children }) => {
     try {
       const data = await getAllProducts();
       setProducts(data);
-      console.log("=========>>>>>>" + data);
     } catch (error) {
       console.log(error.message);
     }
@@ -36,7 +36,6 @@ export const AppProvider = ({ children }) => {
     try {
       const data = await getAllCategoris();
       setCategories(data);
-      // console.log(data);
     } catch (error) {
       console.log(error.message);
     }
@@ -47,7 +46,9 @@ export const AppProvider = ({ children }) => {
   }
 
   return (
-    <AppContext.Provider value={{ handleShow, setHandleShow, toggleModal }}>
+    <AppContext.Provider
+      value={{ handleShow, setHandleShow, toggleModal, toast }}
+    >
       <AppStore.Provider
         value={{
           loadCategoris,
@@ -58,6 +59,7 @@ export const AppProvider = ({ children }) => {
           categories,
         }}
       >
+        <ToastContainer />
         {children}
       </AppStore.Provider>
     </AppContext.Provider>

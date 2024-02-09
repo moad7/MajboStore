@@ -24,6 +24,8 @@ const Categ = () => {
     }
   };
 
+  waveform.register();
+
   useEffect(() => {
     const fetchProducts = async () => {
       await fetchCategoryProducts(id);
@@ -31,16 +33,16 @@ const Categ = () => {
     };
     const timeout = setTimeout(() => {
       fetchProducts();
-    }, 1500);
+    }, 1000);
 
     // Clear the timeout if the component unmounts or if the products are fetched before the timeout
     return () => clearTimeout(timeout);
-  }, [id]);
+  }, [id, productsByCateg]);
 
   return (
     <div className="categBody">
       {loading ? (
-        <div>
+        <div className="spinner">
           <l-waveform size="60" stroke="3.5" speed="0.8" color="black" />
         </div>
       ) : (
