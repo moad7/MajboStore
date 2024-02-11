@@ -28,6 +28,7 @@ const Home = () => {
                         key={category.id}
                         src={category.image}
                         alt={category.name}
+                        loading="lazy"
                       />
                     </Link>
                   </div>

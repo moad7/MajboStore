@@ -5,7 +5,7 @@ function CardProduct(props) {
   return (
     <div className="card">
       <div className="imgcard">
-        <img src={props.product.image} />
+        <img loading="lazy" src={props.product.image} />
       </div>
       <div className="nd">
         <h6>

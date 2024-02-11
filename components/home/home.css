@@ -15,7 +15,7 @@
   overflow-y: scroll;
 }
 .body {
-  background-color: #00590ceb;
+  background-color: rgba(186, 243, 230, 0.936);
   justify-content: center;
   align-items: center;
 }
@@ -52,7 +52,7 @@
   width: 120px;
   height: 120px;
   border-radius: 59px;
-  box-shadow: 1px 6px 10px rgba(255, 255, 255, 0.329);
+  box-shadow: 1px 6px 10px #004d5a;
 }
 .devNameGategory {
   display: flex;
@@ -65,6 +65,6 @@
 .devNameGategory h5 {
   font-weight: 500;
   margin: 10px;
-  color: #fff;
+  color: #004d5a;
   font-size: small;
 }

@@ -1,6 +1,8 @@
 nav {
-  background-color: #000000;
-  box-shadow: 0px 5px 20px 0px #8ecae69a;
+  background-color: rgba(186, 243, 230, 0.797);
+  /* box-shadow: 0px 5px 20px 0px #3f7a801d; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px,
+    rgba(0, 0, 0, 0.2) 0px -4px 4px inset;
   left: 0;
   right: 0;
   z-index: 1300;
@@ -10,14 +12,14 @@ nav {
   column-fill: balance;
   top: 0;
   position: sticky;
+  backdrop-filter: blur(8px);
 }
 
 nav text {
   font-size: 2rem;
-  color: aliceblue;
+  color: #004d5a;
   margin: 15px;
-  background-color: #000000;
-  font-weight: bold;
+  font-weight: 800;
   align-items: center;
   justify-content: center;
   letter-spacing: 0.3em;
@@ -25,22 +27,20 @@ nav text {
 
 nav ul {
   display: flex;
-  background-color: #000000;
 }
 
 nav ul li {
   list-style: none;
   margin-top: 18px;
-  background-color: #000000;
 }
 
 nav ul li a {
   display: block;
   /* remove the line aunder text */
-  background-color: #000000;
 
   text-decoration: none;
-  color: aliceblue;
+  color: #004d5a;
+  font-weight: 700;
   padding: 0.6rem;
   margin: 0 0.6rem;
 
@@ -48,14 +48,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #8ecae64e;
+  background-color: #004d5a44;
 }
 
 nav .menu {
   display: none;
   position: absolute;
   right: 0.75rem;
-  background-color: #023047;
+  /* background-color: #004d5a44; */
   cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
@@ -67,7 +67,7 @@ nav .menu {
 nav .menu span {
   height: 0.4rem;
   width: 100%;
-  background-color: #fff;
+  background-color: #004d5a;
   border-radius: 0.2rem;
 }
 .linkHome {
